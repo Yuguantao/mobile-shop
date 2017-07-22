@@ -7,10 +7,11 @@
     <title>mobile-shop</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-recommend-Ajax.css">
+    <link rel="stylesheet" href="css/index-last-ajax.css">
   </head>
   <body>
     <header>
-      <span class="menu"></span>
+      <span class="menu" id="menu"></span>
       <div class="search">
         <em></em>
         <input type="text" placeholder="CHOCOOLATE">
@@ -233,6 +234,28 @@
         </tr>
       </table>
     </section>
+    <section class="index-last-ajax">
+      <p class="title">
+        <img src="image/down.png" alt="">
+        你可能喜欢
+      </p>
+      <div class="last-ajax">
+        <ul class="last-ajax-ul clear">
+
+        </ul>
+      </div>
+    </section>
+    <section class="foot">
+      <p>
+        <a href="login.html">登录</a>
+        <span class="sep-line">|</span>
+        <a href="register.html">注册</a>
+        <img src="image/logo.png" alt="">
+      </p>
+      <address class="copyright">
+        CopyRight©2007-2016 南京新与力文化传播有限公司
+      </address>
+    </section>
     <footer>
         <ul class="footer">
           <li>
@@ -269,7 +292,9 @@
     </footer>
   </body>
   <script src="js/zepto.js"></script>
+  <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/index-recommend-Ajax.js"></script>
+  <script src="js/index-last-ajax.js"></script>
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register-shop</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/register.css">
+  </head>
+  <body>
+    <div class="main-wrap">
+      <div class="reg-page">
+        <div class="header">
+          <a class="go-back" href="javascript:history.go(-1)"></a>
+          <p class="reg-title">注册</p>
+        </div>
+        <div class="content">
+          <div class="select-container row">
+            <span class="select-title">国家和地区</span>
+            <select class="country-select select">
+                    <option value="+61">澳大利亚</option>
+                    <option value="+82">韩国</option>
+                    <option value="+1">加拿大</option>
+                    <option value="+60">马来西亚</option>
+                    <option value="+1">美国</option>
+                    <option value="+81">日本</option>
+                    <option value="+65">新加坡</option>
+                    <option value="+44">英国</option>
+                    <option value="+86" selected="">中国</option>
+                    <option value="+853">中国澳门</option>
+                    <option value="+886">中国台湾</option>
+                    <option value="+852">中国香港</option>
+            </select>
+            <div class="arrow-right"></div>
+          </div>
+          <div class="input-container phone-container row">
+            <span  class="area-code">+86</span>
+            <input class="input phone-num" type="text" placeholder="手机号">
+          </div>
+          <div class="input-container phone-container row">
+            <span  class="area-code">用户名</span>
+            <input class="input name" type="text" placeholder="请输入用户名">
+          </div>
+          <div class="input-container phone-container row">
+            <span  class="area-code">密码</span>
+            <input class="input possword" type="password" placeholder="请输入密码">
+          </div>
+          <div class="img-check" id="img-check">
+            <div class="img-check-header">
+                <span>请将下列图片点击翻转让其方向一致</span>
+            </div>
+            <div class="img-check-main">
+              <img src="image/up.png" alt="">
+              <img src="image/down1.png" alt="">
+              <img src="image/left.png" alt="">
+              <img src="image/right.png" alt="">
+            </div>
+          </div>
+          <a class="register-a" href="index.html">注　册</a>
+          <p class="register-tip">Yoho!Family账号可登录Yoho!Buy有货、Yoho!Now、mars及SHOW</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/zepto.js"></script>
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/register.js"></script>
+</html>

@@ -27,6 +27,13 @@ html,body{
 body{
   padding-top: 40px;
 }
+.clear:after{
+  display: block;
+  content: '';
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
 header{
   position: fixed;
   top: 0;
@@ -331,6 +338,7 @@ footer{
 .sectionImage3{
   width: 100%;
   max-width: 540px;
+  margin: 0 auto;
 }
 .sectionImage3 img{
   width: 30rem;
@@ -340,6 +348,7 @@ footer{
 .hot-recommend{
   width: 100%;
   max-width: 540px;
+  margin: 0 auto;
 }
 .hot-recommend h5{
   position: relative;
@@ -356,6 +365,8 @@ footer{
 
 .best-week{
   width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
 }
 .best-week h5{
   height: 3rem;
@@ -384,6 +395,8 @@ footer{
 
 .hot-last{
   width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
 }
 .hot-last h5{
   height: 3rem;
@@ -408,4 +421,61 @@ footer{
 .hot-last-table tr td img{
   width: 100%;
   height: 57%;
+}
+
+
+.index-last-ajax{
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  max-width: 540px;
+}
+.title{
+  position: relative;
+  width: 100%;
+  height: 4.875rem;
+  line-height: 4.875rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color:#999;
+  background-color: #fff;
+}
+.title img{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 1.5rem;
+  left: 30%;
+  transform: translateX(-30%) rotateZ(180deg);
+}
+
+.foot{
+  width: 100%;
+  margin-bottom: 45px;
+  display: block;
+}
+.foot p{
+  background-color: #fff;
+  padding: 0.1rem 1.375rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
+}
+.foot p, .foot p a{
+  font-size: 1.1rem;
+  color:#000;
+}
+.copyright{
+  font-style: normal;
+  height: 60px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  color: #666;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1rem;
+}
+.foot img{
+  float: right;
+  margin-top: 1rem;
 }
