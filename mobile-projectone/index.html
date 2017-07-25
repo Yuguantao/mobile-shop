@@ -5,16 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>mobile-shop</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-recommend-Ajax.css">
     <link rel="stylesheet" href="css/index-last-ajax.css">
+    <link rel="stylesheet" href="css/broadside.css">
   </head>
   <body>
+    <nav class="broadside">
+      <ul class="first">
+            <li class="boys">
+                <a href="index.html" style="">
+                    <span class="nav-img" style="background-image: url(image/boy.png)"></span>
+                    <em>男生</em>
+                    <span class="broadside-title">BOYS</span>
+                </a>
+            </li>
+            <li class="girls">
+                <a href="index.html" style="">
+                    <span class="nav-img" style="background-image: url(image/girl.png)"></span>
+                    <em>女生</em>
+                    <span class="broadside-title">GIRLS</span>
+                </a>
+            </li>
+            <li class="kids">
+                <a href="index.html" style="">
+                    <span class="nav-img" style="background-image: url(image/children.png)"></span>
+                    <em>童装</em>
+                    <span class="broadside-title">KIDS</span>
+                </a>
+            </li>
+            <li class="life style">
+                <a href="index.html" style="">
+                    <span class="nav-img" style="background-image: url(image/idea.png)"></span>
+                    <em>创意生活</em>
+                    <span class="broadside-title">LIFE STYLE</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <header>
       <span class="menu" id="menu"></span>
       <div class="search">
         <em></em>
-        <input type="text" placeholder="CHOCOOLATE">
+        <input id="searchInput" type="text" placeholder="CHOCOOLATE">
       </div>
       <span class="message"></span>
     </header>
@@ -62,7 +96,7 @@
             </a>
           </td>
           <td>
-            <a href="#">
+            <a href="list.html">
               <img src="image/all.png" alt="">
               <p>全部分类</p>
             </a>
@@ -259,31 +293,31 @@
     <footer>
         <ul class="footer">
           <li>
-            <a href="#">
+            <a href="index.html">
               <span></span>
               <p>首页</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="list.html">
               <span></span>
               <p>分类</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="cart.html">
               <span></span>
               <p>购物车</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="order.html">
               <span></span>
               <p>我的</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="addUserAddress.html">
               <span></span>
               <p>更多</p>
             </a>
@@ -297,4 +331,28 @@
   <script src="js/carousel.js"></script>
   <script src="js/index-recommend-Ajax.js"></script>
   <script src="js/index-last-ajax.js"></script>
+  <script src="js/broadside.js"></script>
+  <script>
+    if (localStorage.getItem('token')) {
+      $('.foot p').html(localStorage.getItem('username')+'　　<span id="logout">退出</span>');
+      $('#logout').click(function(){
+        localStorage.clear();
+        location.reload();
+      });
+    }
+    console.log(localStorage.getItem('username'))
+    if(localStorage.getItem('username')){
+      console.log(12345);
+      $('.foot p').html(localStorage.getItem('username') +'　　<span id="logout">退出</span>');
+      $('#logout').click(function(){
+        localStorage.clear();
+        location.reload();
+      });
+    }
+    var searchInput = document.getElementById('searchInput');
+
+    searchInput.oninput = function(){
+      location.href = 'search.html'
+    }
+  </script>
 </html>

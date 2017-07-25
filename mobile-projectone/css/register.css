@@ -172,3 +172,20 @@ body{
   color: #fff;
   font-size: 1.1rem;
 }
+
+.sendmessage{
+  display: none;
+  width: 50%;
+  height: 8rem;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color:#fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 8rem;
+}

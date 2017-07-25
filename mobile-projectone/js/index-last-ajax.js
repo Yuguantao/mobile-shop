@@ -1,7 +1,7 @@
 var lastAjax = document.querySelector('.last-ajax');
 var lastAjaxUl = document.querySelector('.last-ajax-ul');
 // console.log(lastAjax,lastAjaxUl);
-var page = 0;
+var page = 1;
 var pagesize = 20;
 
 $(window).scroll(function(){
@@ -21,7 +21,8 @@ $(window).scroll(function(){
         for(var i = 0;i<response.data.length;i++){
           var obj = response.data[i];
           html+='<li>'
-          +'<a href="detail.html">'
+          +'<a href="detail.html?goods_id='+ obj.goods_id
+          +'">'
           + '<img class="main" src = "'
           + obj.goods_thumb
           +'" alt="">'

@@ -6,7 +6,8 @@ shop.api.fetchHotGoods(1,20,function(response){
   for(var i = 0;i<response.data.length;i++){
     var obj = response.data[i];
     html+='<li>'
-    +'<a href="detail.html">'
+    +'<a href="detail.html?goods_id='+ obj.goods_id
+    +'">'
     + '<img src = "'
     + obj.goods_thumb
     +'" alt=""></a>'
